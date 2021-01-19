@@ -7,9 +7,9 @@ const dispari = [];
 for (let i = 0; i < array.length; i++){
     if (array[i] % 2 == 0){
         pari.push(array[i]);
-        document.getElementById('verde').innerHTML = pari;
+        document.getElementById('verde').innerHTML = `${pari}`;
     } else {
         dispari.push(array[i]);
-        document.getElementById('rosso').innerHTML = dispari;
+        document.getElementById('rosso').innerHTML = `${dispari}`;
     }
 }
