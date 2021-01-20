@@ -12,3 +12,4 @@ if (parola1.length > parola2.length) {
         ${parola1} ${parola2}
     `);
 }
+
