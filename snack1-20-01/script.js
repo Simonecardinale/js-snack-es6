@@ -21,11 +21,11 @@ const bici = [
 ];
 
 
-const [ , , , pesoLast] = bici;
+// const [ , , , pesoLast] = bici;
 
-console.log(`
-${pesoLast.peso}
-`);
+// console.log(`
+// ${pesoLast.peso}
+// `);
 
 
 
@@ -33,12 +33,12 @@ ${pesoLast.peso}
 
 // Metodo col for each
 
-// let min = bici[0].peso;
-// bici.forEach((element) => {
-//     if (element.peso < min) {
-//         min = element.peso
-//     }
-// });
-// console.log(min);
+let min = bici[0].peso;
+bici.forEach((element) => {
+    if (element.peso < min) {
+        min = element.peso
+    }
+});
+console.log(`${min}`);
 
 
