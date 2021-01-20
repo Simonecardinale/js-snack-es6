@@ -5,12 +5,17 @@
 // Se l’utente inserisce 2 numeri: 1,4 allora selezioniamo 'Pluto', 'Paperino', 'Paperone', 'Paperina'
 
 const myArray = ['Pippo', 'Pluto', 'Paperino', 'Paperone', 'Paperina', 'Paperoga'];
-const risultato =[];
 
 const utente1 = parseInt(prompt("Inserisci l'indice di partenza"));
 const utente2 = parseInt(prompt("Inserisci l'indice finale"));
+const risultato =[myArray[utente1], myArray[utente2]];
 
-risultato.push(myArray[utente1],myArray[utente2]);
-myArray.forEach((element) => {
+// risultato.push(myArray[utente1],myArray[utente2]);
+
+const filteredArray = myArray.filter((element, index) => {
+    return element[index] === [...myArray[utente1], ...myArray[utente2]];
+    
+
 });
-console.log(risultato);
+
+console.log(filteredArray);
